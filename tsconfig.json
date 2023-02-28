@@ -1,0 +1,42 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "styles": [
+          "node_modules/bootstrap/scss/bootstrap.scss",
+          "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+          "src/styles.css"
+         ],
+  "scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  ],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": [
+      "ES2022",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strict" : false,
+    "noImplicitReturns" : false,
+  }
+}
