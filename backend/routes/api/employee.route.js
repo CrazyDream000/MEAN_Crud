@@ -38,10 +38,10 @@ employeeRoute.route('/read/:id').get((req, res) => {
 
 // Update employee
 employeeRoute.route('/update/:id').put((req, res, next) => {
-  Employee.findByIdAndUpdate(req.params.id),({
+  Employee.findByIdAndUpdate({_id:req.params.id},{
     $set: req.body
   }).then((data)=>{
-    console.log("updated successfully!");
+    res.json(data)
   })
 })
 // Delete employee

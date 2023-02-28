@@ -300,12 +300,26 @@
       visibility: hidden;
     }
   }
+  
+  .f-white{
+    color:white!important;
+  }
+
+  .f-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
 </style>
 
 <!-- Toolbar -->
 
-<nav>
-  <a routerLinkActive="active" routerLink="/employees-list">View Employees</a>
-  <a routerLinkActive="active" routerLink="/create-employee">Add Employee</a>
+<nav class="f-row m-3">
+  <div>
+    <a class="f-white btn btn-primary ml-2" routerLinkActive="active" routerLink="/employees-list">View Employees</a>
+    <a class="f-white btn btn-primary mr-2" routerLinkActive="active" routerLink="/create-employee">Add Employee</a>
+  </div>
 </nav>
 <router-outlet></router-outlet>
